@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Recipe Lounge Homepage</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+
+
+
+
+<body>
+  <header>
+    <h1> The Recipe Lounge</h1>
+</header>  
+
+
+<nav>
+    <!-- menu sandwich icon button: ☰ -->
+   <label for="menu-toggle" class="menu-btn"> ☰ MENU </label>
+
+   <!-- Hidden checkbox for controls menu-->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- curtain menu-->
+     <div class="menu">
+    <!-- close icon button x-->
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <div class="menu-items">
+             <a href="index.html">HOME</a>
+              <a href="browseRecipes.html">BROWSE RECIPES</a>
+             <a href="favourites.html">FAVOURITES</a>
+             <a href="account.html">MY ACCOUNT</a>
+             <a href="aboutUs.html">ABOUT US</a>
+             <a href="contactUs.html">CONTACT US</a>
+      
+        </div>
+
+     </div>
+      
+</nav>
+
+
+<main>
+  <h2>The Recipe Lounge</h2>
+  
+<section class="intro-box">
+    <p>
+        Welcome to The Recipe Lounge, your go-to place for discovering delicious
+        drinks for every mood and occasion. From refreshing smoothies and
+        colourful mocktails to cosy coffees and creative cocktails, there's
+        always something new to mix, sip and enjoy.
+    </p>
+</section>
+
+
+
+
+
+<section>
+ <h2> Discover New Recipes</h2>
+
+ <h3> Spring Favourites...</h3>
+
+</section>
+
+
+<section>
+   <div id="item-container">
+
+   </div>
+	<!--Modal dialog-->
+<div id="item-detail-modal">
+    <div class="modal-content">
+         <a id="modal-close" href="#">&times;</a>
+         <h2 id="modal-title">Item Title</h2>
+         <p id="modal-description">Description</p>
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+</section>
+</main>
+
+
+
+
+
+ 
+<footer>
+    <p>Created by Abigail Chapman &copy; 2026</p>
+
+    <div class="footer-links">
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+    </div>
+</footer>
+
+<script src="browseRecipes.js" defer></script>
+<script src="index.js" defer></script>
+
+</body>
+
+</html>

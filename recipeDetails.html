@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recipe details page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+
+
+
+
+<body>
+   
+<header>
+    <h1> The Recipe Lounge</h1>
+</header>
+
+<nav>
+    <!-- menu sandwich icon button: ☰ -->
+   <label for="menu-toggle" class="menu-btn"> ☰ MENU </label>
+
+   <!-- Hidden checkbox for controls menu-->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- curtain menu-->
+     <div class="menu">
+    <!-- close icon button x-->
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <div class="menu-items">
+             <a href="index.html">HOME</a>
+              <a href="browseRecipes.html">BROWSE RECIPES</a>
+             <a href="favourites.html">FAVOURITES</a>
+             <a href="account.html">MY ACCOUNT</a>
+             <a href="aboutUs.html">ABOUT US</a>
+             <a href="contactUs.html">CONTACT US</a>
+      
+        </div>
+
+     </div>
+      
+</nav>
+
+
+    
+<main>
+
+    <h2>Recipe Details</h2>
+
+    <!-- Back to browse recipes -->
+    <a href="browseRecipes.html" class="back-link">
+        &larr; Back to Browse Recipes
+    </a>
+
+    <!-- Selected recipe information appears here -->
+    <section id="recipeDetails">
+
+        <p>Loading recipe...</p>
+
+
+
+
+    </section>
+    
+
+    <section>
+        <button type="button" id="fav-btn" class="fav-btn" aria-pressed="false">
+    ♡ Save to Favourites
+</button>
+<p id="fav-message" class="fav-message" aria-live="polite"></p>
+    </section>
+
+
+
+    <!-- Reviews section -->
+    <section class="reviews-section">
+
+        <h2>Reviews</h2>
+
+        <p>Have you tried this drink? Leave a review!</p>
+
+        <form id="reviewForm">
+
+            <label for="reviewName">Your Name:</label>
+
+            <input
+                type="text"
+                id="reviewName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="reviewRating">Rating:</label>
+
+            <select id="reviewRating" required>
+                <option value="">Select a rating</option>
+                <option value="5">★★★★★ Excellent</option>
+                <option value="4">★★★★ Very Good</option>
+                <option value="3">★★★ Good</option>
+                <option value="2">★★ Okay</option>
+                <option value="1">★ Poor</option>
+            </select>
+
+            <label for="reviewText">Your Review:</label>
+
+            <textarea
+                id="reviewText"
+                placeholder="Write your review here..."
+                required
+            ></textarea>
+
+            <button type="submit">Submit Review</button>
+
+        </form>
+
+        <div id="reviewsList">
+
+            <p>Be the first to review this drink!</p>
+
+        </div>
+
+    </section>
+
+
+
+</main>
+
+
+
+
+
+
+<footer>
+    <p>Created by Abigail Chapman &copy; 2026</p>
+
+    <div class="footer-links">
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+    </div>
+</footer>
+
+<script src="browseRecipes.js"></script>
+<script src="recipeDetails.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>favourites page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+</head>
+
+
+
+
+
+<body>
+   
+<header>
+    <h1> The Recipe Lounge</h1>
+</header>
+
+<nav>
+    <!-- menu sandwich icon button: ☰ -->
+   <label for="menu-toggle" class="menu-btn"> ☰ MENU </label>
+
+   <!-- Hidden checkbox for controls menu-->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- curtain menu-->
+     <div class="menu">
+    <!-- close icon button x-->
+        <label for="menu-toggle" class="close-btn">&times;</label>
+        <div class="menu-items">
+             <a href="index.html">HOME</a>
+              <a href="browseRecipes.html">BROWSE RECIPES</a>
+             <a href="favourites.html">FAVOURITES</a>
+             <a href="account.html">MY ACCOUNT</a>
+             <a href="aboutUs.html">ABOUT US</a>
+             <a href="contactUs.html">CONTACT US</a>
+      
+        </div>
+
+     </div>
+      
+</nav>
+
+
+<main>
+
+    <h2 class="page-heading">Favourited Recipes</h2>
+
+    <!-- Search bar -->
+    <div class="search-bar">
+        <label for="fav-search" class="visually-hidden">Search your favourite recipes</label>
+        <input type="search" id="fav-search" placeholder="Search for recipes..." autocomplete="off">
+    </div>
+
+    <section aria-labelledby="fav-title">
+        <h3 id="fav-title">My Favourite Recipes</h3>
+        <p id="fav-count" class="fav-count" aria-live="polite"></p>
+
+        <!-- Cards are built by favourites.js -->
+        <ul id="fav-grid" class="recipe-grid"></ul>
+
+        <!-- Shown by favourites.js when there is nothing to display -->
+        <div id="fav-empty" class="empty-state" hidden>
+            <p id="fav-empty-text"></p>
+            <a href="browseRecipes.html" class="btn">Browse Recipes</a>
+        </div>
+    </section>
+
+</main>
+
+
+
+<footer>
+    <p>Created by Abigail Chapman &copy; 2026</p>
+
+    <div class="footer-links">
+        <a href="aboutUs.html">About Us</a>
+        <a href="contactUs.html">Contact Us</a>
+    </div>
+</footer>
+
+<script src="browseRecipes.js"></script>
+<script src="favourites.js"></script>
+
+</body>
+
+</html>
